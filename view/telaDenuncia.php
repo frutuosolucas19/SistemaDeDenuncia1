@@ -25,7 +25,7 @@
             }
             textarea {
                 height: 100px;
-                width: 600px;
+                width: 750px;
             }
             
             
@@ -35,39 +35,39 @@
     <body>
         <img src="logo1.png" width="100%" height="240">
 
-        <fieldset style="width: 50%; margin: -52px auto;"><legend> <h1> <br/>Cadastro de denuncia </h1> </legend>
+        <fieldset style="width: 60%; margin: -52px auto;"><legend> <h1> <br/>Cadastro de denuncia </h1> </legend>
 
 
             <form method="post" action="processaDenuncia.php">
                 
                 <div class="form-group row">
-                    <label class="col-sm-2 col-form-label"> Nome do Local</label>
-                    <div class="col-sm-8">
+                    <label class="col-sm-2 col-form-label">Local</label>
+                    <div class="col-sm-10">
                         <input type="text" name="local" class="form-control"  placeholder="Informe o nome do local">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Endereco</label>
-                    <div class="col-sm-8">
+                    <div class="col-sm-10">
                         <input type="text" name="endereco" class="form-control"  placeholder="Informe o endereco">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Telefone</label>
-                    <div class="col-sm-8">
+                    <div class="col-sm-10">
                         <input type="text" name="telefone" class="form-control"  placeholder="Informe o telefone">
                     </div>
                 </div>
 
 
                 
-                <label> Descrição do problema: </label> <br/>
+                <label> Descrição do problema </label> 
                 <div align="center">
                     <textarea name="descricaoProblema" cols='60' rows='6'> </textarea> 
                     <br/>
                     <br/>
                 </div>
-                <label>Dica de solução:</label> <br/>
+                <label>Dica de solução</label> <br/>
                 <div align="center">
                     <textarea name="dicaSolucao" cols='60' rows='6'></textarea> <br/>
                     <br/>
