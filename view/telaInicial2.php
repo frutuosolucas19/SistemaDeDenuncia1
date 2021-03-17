@@ -27,7 +27,7 @@ session_start();
 
             .painelBotao{
                 margin: 0 auto;
-                width: 605px;
+                width: 720px;
                 height: auto;
                 padding: 10px;
                 background-color: darkblue;
@@ -75,6 +75,7 @@ session_start();
                     <button onclick="window.location.href = 'telaDenuncia.php';" type="button" class="btn btn-primary btn-lg">Cadastro de Denúncias</button>
                     <button onclick="window.location.href = 'telaConsultaDenuncia.php';" type="button" class="btn btn-primary btn-lg">Consulta de denúncias</button>
                     <button onclick="window.location.href = 'telaSuporte.php';" type="button" class="btn btn-primary btn-lg">Suporte</button>
+                    <button onclick="window.location.href = 'telaInicial.php';" type="button" class="btn btn-primary btn-lg">Logout</button>
                     <div/> 
 
                     </fieldset>

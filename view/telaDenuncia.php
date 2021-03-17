@@ -73,7 +73,7 @@
                     <br/>
                 </div>
                 <div align="center">
-                    <button onclick="window.location.href = 'telaEndereco.php';" type="button" class="btn btn-primary btn-lg">VOLTAR</button>
+                    <button onclick="window.location.href = 'telaInicial2.php';" type="button" class="btn btn-primary btn-lg">VOLTAR</button>
                     <button type="reset" class="btn btn-primary btn-lg">APAGAR</button>
                     <button  type="submit" class="btn btn-primary btn-lg">SALVAR</button>
 
