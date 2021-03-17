@@ -1,6 +1,6 @@
 <?php
 $conexao = mysqli_connect("127.0.0.1", "root", "");
-mysqli_select_db($conexao, "projeto2");
+mysqli_select_db($conexao, "projeto");
 session_start();
 ?>
 <!DOCTYPE html>
@@ -48,7 +48,6 @@ session_start();
 
                 $result_usuarios = " SELECT * from usuario as u "
                         . "join denuncia as d on u.idUsuario=d.Usuario_id "
-                        . "join endereco as e on d.Endereco_id=e.endereco_id"
                         . "WHERE username = '$username'";
                 $resultado_usuarios = mysqli_query($conexao, $result_usuarios);
 
@@ -68,7 +67,7 @@ session_start();
                     echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['local'] . "</center>" . "</td>";
                     echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['descricaoProblema'] . "</center>" . "</td>";
                     echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['dicaSolucao'] . "</center>" . "</td>";
-                    echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['status'] . "</center>" . "</td>";
+                    echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['Status_id'] . "</center>" . "</td>";
                     echo"</tr>";
                 }
                 echo"</tbody></table>";
@@ -78,6 +77,7 @@ session_start();
 
             <div align="center">
                 <br/>
+                <input onclick="window.location.href = 'telaConsultaDenuncia.php';" type="button" class="btn btn-primary btn-lg" value="Voltar">
                 <button  onclick="window.location.href = 'telaInicial2.php';" type="button" class="btn btn-primary btn-lg">Tela Inicial</button>
                 <br/>
                 <br/>
