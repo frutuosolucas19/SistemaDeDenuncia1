@@ -75,6 +75,7 @@ session_start();
             </div>
             <!-- xxxxxxx -->
 
+            <br/>
             <div align="center">
                 <br/>
                 <input onclick="window.location.href = 'telaConsultaDenuncia.php';" type="button" class="btn btn-primary btn-lg" value="Voltar">
