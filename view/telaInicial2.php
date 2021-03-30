@@ -17,7 +17,7 @@ session_start();
         <style>
             .painelTexto{
                 position: absolute;
-                width: 900px;
+                width: 902px;
                 height: auto;
                 background-color: buttonface;
                 left: 50%;
@@ -27,7 +27,7 @@ session_start();
 
             .painelBotao{
                 margin: 0 auto;
-                width: 720px;
+                width: 902px;
                 height: auto;
                 padding: 10px;
                 background-color: darkblue;
@@ -47,12 +47,12 @@ session_start();
             .label1 {
                 position: absolute;
                 left: 0%;
-                top: 96%;
+                top: 99%;
             }
             .label2 {
                 position: absolute;
                 left: 0%;
-                top: 100%;
+                top: 103%;
             }
 
         </style>
@@ -72,11 +72,11 @@ session_start();
 
 
                 <div class="painelBotao" align="center">
-                    <button onclick="window.location.href = 'telaDenuncia.php';" type="button" class="btn btn-primary btn-lg">Cadastro de Denúncias</button>
-                    <button onclick="window.location.href = 'telaConsultaDenuncia.php';" type="button" class="btn btn-primary btn-lg">Consulta de denúncias</button>
+                    <button onclick="window.location.href = 'telaDenuncia.php';" type="button" class="btn btn-primary btn-lg">Cadastro de Denúncia</button>
+                    <button onclick="window.location.href = 'telaConsultaDenuncia.php';" type="button" class="btn btn-primary btn-lg">Consulta de Denúncia</button>
+                    <button onclick="window.location.href = 'processaConsultaLocal.php';" type="button" class="btn btn-primary btn-lg">Locais Denunciados</button>
                     <button onclick="window.location.href = 'telaSuporte.php';" type="button" class="btn btn-primary btn-lg">Suporte</button>
                     <button onclick="window.location.href = 'logout.php';" type="button" class="btn btn-primary btn-lg">Logout</button>
-                    <div/> 
 
                     </fieldset>
                     <label class="label1"> Desenvolvido por: Lucas de Liz Frutuoso e Matheus Henrique Maas</label> <br/>
