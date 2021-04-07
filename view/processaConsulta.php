@@ -46,8 +46,8 @@ session_start();
                 $consulta = mysqli_query($conexao, "SELECT * from usuario WHERE username = '$username' ") or die(mysqli_error($conexao));
                 $linhas = mysqli_num_rows($consulta);
 
-                $result_usuarios = " SELECT * from usuario as u "
-                        . "join denuncia as d on u.idUsuario=d.Usuario_id "
+               $result_usuarios = " SELECT * from usuario as u "
+                        . "join denuncia as d on u.idUsuario=d.Usuario_id join status as s on d.idDenuncia=s.idStatus "
                         . "WHERE username = '$username'";
                 $resultado_usuarios = mysqli_query($conexao, $result_usuarios);
 
@@ -67,7 +67,7 @@ session_start();
                     echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['local'] . "</center>" . "</td>";
                     echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['descricaoProblema'] . "</center>" . "</td>";
                     echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['dicaSolucao'] . "</center>" . "</td>";
-                    echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['Status_id'] . "</center>" . "</td>";
+                    echo"<td class='bg-light text-dark'>" . "<center>" . $row_usuario['status'] . "</center>" . "</td>";
                     echo"</tr>";
                 }
                 echo"</tbody></table>";
