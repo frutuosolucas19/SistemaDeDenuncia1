@@ -34,7 +34,7 @@ session_start();
         </style>
     </head>
     <body>
-        <img src="Logo1.png" width="1350" height="260">
+        <img src="Logo1.png" width="100%" height="260">
 
         <fieldset style="width: 50%; margin: 1px auto;"><legend> <br/> <br/> <br/> <h1> Consulta de denuncia </h1> </legend>
             <br/>
